@@ -1,0 +1,22 @@
+{
+  "name": "fswd-lab-fp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run mocha",
+    "mocha": "istanbul cover _mocha -- -R spec test/*-test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "lodash": "^4.16.6",
+    "rxjs": "^5.0.0-rc.1"
+  }
+}

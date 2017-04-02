@@ -13,11 +13,7 @@ function isFizzOrBuzz(value) {
   }
 }
 
-var rangeForVal = _.flow(_.partial(_.add, 1), _.times);
-
-function fizzBuzz(val) {
-  return _.map(rangeForVal(val), isFizzOrBuzz);
-}
+var fizzBuzz = _.flow(_.partial(_.add, 1), _.times, _.partial(_.map, _, isFizzOrBuzz));
 
 describe('FizzBuzz', function() {
   it('should be ["FizzBuzz"] for 0', function() {

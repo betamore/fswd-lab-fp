@@ -2,7 +2,7 @@ require('chai/register-should');
 
 var _ = require('lodash');
 
-var fizzBuzz = require('../lib/fizzBuzz');
+var fizzBuzz = require('../lib/fizzbuzz');
 
 describe('fizzBuzz', function() {
     // write a couple of your own tests

@@ -19,7 +19,7 @@ var fib = require('../lib/fibonacci');
 //     return _.last(fibArray);
 // }
 
-describe('fibonacci', function() {
+describe.only('fibonacci', function() {
     it('should be 1 for 0', function() {
         fib(0).should.equal(1);
     });
